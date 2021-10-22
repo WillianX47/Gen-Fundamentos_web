@@ -4,42 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Contato</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">home</a></li>
-      <li><a href="contato.html"></a>Contato</li>
-    </ul>
+    <header>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </header>
 
     <h1>Entre em contato comigo</h1>
 
-    <form>
-      <label for="nome">Nome:</label> <br />
-      <input type="text" id="nome" />
-      <br />
-      <label for="email">Email:</label><br />
-      <input type="text" id="email" />
-      <br />
-      <label for="assunto">Assunto:</label><br />
-      <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-      <br />
-      <br />
-      <button>Enviar</button>
-    </form>
+    <section class="contato">
+      <div>
+        <form>
+          <label for="nome">Nome:</label> <br />
+          <input type="text" id="nome" />
+          <br />
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" />
+          <br />
+          <label for="assunto">Assunto:</label><br />
+          <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+          <br />
+          <br />
+          <button style="color: black">Enviar</button>
+        </form>
+      </div>
 
-    <h2>Endereço</h2>
+      <div class="map">
+        <p>Av. Rebouças, 2148</p>
+        <p>São Paulo - SP</p>
 
-    <p>Av. Rebouças, 2148</p>
-    <p>São Paulo - SP</p>
-
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.070913813914!2d-46.68359298542205!3d-23.565896467643945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57dd1567a599%3A0xe96493ca15a6b702!2sBurger%20King!5e0!3m2!1spt-BR!2sbr!4v1634753171613!5m2!1spt-BR!2sbr"
-      width="400"
-      height="500"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.070913813914!2d-46.68359298542205!3d-23.565896467643945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57dd1567a599%3A0xe96493ca15a6b702!2sBurger%20King!5e0!3m2!1spt-BR!2sbr!4v1634753171613!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
   </body>
 </html>
