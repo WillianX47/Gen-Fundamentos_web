@@ -1,95 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
-* {
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
 html {
-    background-color: rgb(35, 74, 133);
+  background-color: rgb(234, 242, 250);
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Inicio */
+/* Index file */
 
-h1{
-    text-align: center;
-}
-
-header {
+.flex-container {
   display: flex;
   justify-content: center;
-}
-
-.content{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  list-style: none;
-  width: 70vw;
-  height: 3.5rem;
 }
 
-#menu a {
-  background-color: white;
-  padding: 10px;
-  border-radius: 50%;
-  font-weight: 700;
-  text-decoration: none;
-  color: rgb(126, 115, 115);
-}
-
-.perfil {
-  display: flex;
-  flex-flow: row;
+.text-align {
   text-align: center;
 }
 
-.perfil p{
-    text-justify: auto;
-    word-break: break-all;
-    padding: 5%;
+.text-justify {
+  text-align: justify;
 }
 
-.foto-perfil{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.align-items {
+  align-items: center;
 }
 
-.foto{
-  border-radius: 30%;
-  max-width: 25vw;
-  border: 2px solid black;
+.menu {
+  display: flex;
 }
 
-h2{
-    display: flex;
-    justify-content: center;
+.menu li {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50vw;
 }
 
-
-/* Contato */
-
-.contato{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+.menu li a {
+  display: flex;
+  color: black;
+  background-color: rgb(108, 149, 226);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  text-decoration: none;
 }
 
-.contato form{
-    margin-right: 50px;
+.profile-picture {
+  display: flex;
+  width: 25vw;
+  border-radius: 50%;
 }
 
-.map{
-    display: flex;
-    flex-flow: column;
+.about {
+  display: flex;
+  flex-flow: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+/* Página contato */
+
+.box {
+  display: flex;
+  flex-flow: column;
+  margin-right: 5vw;
+  background-color: rgb(108, 149, 226);
+  padding: 2vw;
+  box-shadow: 10px 5px 5px black;
+}
+
+.box button {
+  background-color: rgb(45, 88, 167);
+  margin-top: 2vw;
+}
+
+.box label {
+  display: flex;
+  justify-content: left;
 }

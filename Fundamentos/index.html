@@ -8,25 +8,26 @@
     <title>Meu perfil</title>
   </head>
   <body>
-    <header>
-      <ul id="menu">
+    <header class="flex-container">
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </header>
 
-    <section class="perfil">
-      <div class="foto-perfil">
+    <hr />
+
+    <section class="flex-container">
+      <div>
         <img
           src="https://github.com/WillianX47.png"
           alt="Foto do Willian"
-          class="foto"
+          class="profile-picture"
         />
       </div>
 
-      <div>
-        <h1>Sobre o Will</h1>
-
+      <div class="about" class="text-justify">
+        <h1 class="text-align">Sobre o Will</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
           praesentium veritatis inventore iste, sint pariatur ad perferendis
@@ -42,10 +43,9 @@
       </div>
     </section>
 
-    <h2>Um dos meus jogos favoritos:</h2>
+    <h2 class="flex-container">Um dos meus jogos favoritos:</h2>
 
-    <section class="content">
-      
+    <section class="flex-container">
       <div>
         <iframe
           width="auto;"
@@ -58,5 +58,7 @@
         ></iframe>
       </div>
     </section>
+
+    <footer></footer>
   </body>
 </html>
